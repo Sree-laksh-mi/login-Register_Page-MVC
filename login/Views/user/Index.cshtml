@@ -1,0 +1,19 @@
+﻿@model IEnumerable<login.Models.user>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="color:darkslategray;font-weight: bold;">HOME</h2>
+<br />
+<hr />
+<br />
+
+<h4 style="color:darkslategray;font-weight: bold;">Welcome @Session["Username"]</h4>
+
+
+<br />
+
+
+<p align="right">
+   <h5 style="color:burlywood;font-weight: bold;"> @Html.ActionLink("Logout", "Logout")</h5>
