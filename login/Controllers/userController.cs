@@ -84,6 +84,7 @@ namespace login.Controllers
         {
             FormsAuthentication.SignOut();
             Session.Clear();
+            Session.Abandon();
             return RedirectToAction("Login");
         }
 
